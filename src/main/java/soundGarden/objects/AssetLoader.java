@@ -32,7 +32,7 @@ public class AssetLoader {
         if(imgMap.containsKey(assetName)){
             return imgMap.get(assetName);
         }else{
-            PImage asset = applet.loadImage("assets/" + assetName);
+            PImage asset = applet.loadImage("/assets/" + assetName);
             imgMap.put(assetName, asset);
             return asset;
         }
@@ -42,7 +42,7 @@ public class AssetLoader {
         if(soundMap.containsKey(assetName)){
             return soundMap.get(assetName);
         }else{
-            String path = applet.sketchPath("assets/" + assetName);
+            String path = applet.sketchPath("/assets/" + assetName);
             SoundFile asset = new SoundFile(applet, path);
             soundMap.put(assetName, asset);
             return asset;

@@ -15,7 +15,7 @@ public class Text extends RenderedObject {
     public Text(String text, float size, float xPos, float yPos) {
         super();
         this.text = text;
-        font = applet.createFont("font.ttf", size);
+        font = applet.createFont("/assets/font.ttf", size);
         position.x = xPos;
         position.y = yPos;
         textWidth = text.length() * size * 2;
@@ -26,7 +26,7 @@ public class Text extends RenderedObject {
         super();
         opacity = op;
         this.text = text;
-        font = applet.createFont("font.ttf", size);
+        font = applet.createFont("/assets/font.ttf", size);
         position.x = xPos;
         position.y = yPos;
         textWidth = text.length() * size * 2;
